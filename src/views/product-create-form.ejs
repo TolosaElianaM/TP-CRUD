@@ -2,6 +2,7 @@
 <html lang="es">
 <!-- Include Head -->
 <%- include('partials/head', {title: 'Formulario de creación'}) %>
+
 <body>
 	<!-- Header -->
 	<%- include('partials/headerNavbar') %>
@@ -14,7 +15,7 @@
 			</div>
 		</div>
 		<div class="col-12">
-			<form action="¿?" method="___">
+			<form action="/products" method="POST" enctype="multipart/form-data">
 				<div class="row product-detail">
 					<div class="col-12 col-md-6">
 						<label for="name" class="form-label">Nombre del producto:</label>
@@ -37,8 +38,12 @@
 						</select>
 					</div>
 					<div class="col-12">
-						<label for="description" class="form-label">Descipción:</label>
+						<label for="description" class="form-label">Descripción:</label>
 						<textarea name="description" id="description" class="form-input"></textarea>
+					</div>
+					<div class="col-12">
+						<label for="description" class="form-label">Imagen:</label>
+						<input type="file" name="image" id="image">
 					</div>
 					<div class="col-12">
 						<button type="submit" class="buy-now-button">Guardar producto</button>
@@ -53,5 +58,6 @@
 	<!-- footer -->
 	<%- include('partials/footer') %>
 	<!-- /footer -->
-</body>	
+</body>
+
 </html>
