@@ -32,6 +32,7 @@
 .DS_Store?
 ._*
 .Spotlight-V100
+package-lock.json
 .Trashes
 ehthumbs.db
 Thumbs.db
